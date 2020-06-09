@@ -1,0 +1,20 @@
+.header {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid #f1f1f1;
+  display: flex;
+  height: 60px;
+  padding: 20px 40px;
+}
+
+.header__icon {
+  width: 60px;
+  height: 60px;
+  background: url(https://res.cloudinary.com/dnk7tyzqk/image/upload/v1554020285/telltail/logo.svg) no-repeat;
+  background-size: contain;
+}
+
+.header__text_bold-pink {
+  font-weight: bold;
+  color: #f49cc4;
+}

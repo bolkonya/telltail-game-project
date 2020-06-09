@@ -1,0 +1,89 @@
+.registration-page {
+    padding: 40px 100px 0;
+    
+}
+
+.registration-pane {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.registration-pane__label {
+    font-family: 'Gabriela', serif;
+    font-size: 50px;
+}
+
+.registration-pane__input {
+    padding: 0 10px;
+    border: 1px solid var(--color-light-grey);
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.registration-pane__done-button {
+    border: none;
+    color: #fff;
+    background-color: #e79fc0;
+    border-radius: 3px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.registration-pane__done-button:hover {
+    cursor: pointer;
+}
+
+.fileform { 
+    background-color: #FFFFFF;
+    border: 1px solid var(--color-light-grey);
+    border-radius: 2px;
+    cursor: pointer;
+    height: 26px;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    width: 230px;
+}
+ 
+.fileform__selectbutton { 
+    background-color: #A2A3A3;
+    border: 1px solid #939494;
+    border-radius: 2px;
+    color: #FFFFFF;
+    float: right;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 2px 6px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+}
+ 
+.fileform__input{
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    -moz-opacity: 0;
+    opacity: 0;
+    height: 30px;
+}
+
+.fileform__label {
+    background-color: #FFFFFF;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 2px;
+    text-align: left;
+    vertical-align: middle;
+    width:160px;
+}

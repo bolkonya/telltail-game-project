@@ -1,0 +1,88 @@
+.scene {
+  padding: 40px 100px 0;
+}
+
+.scene__description {
+  height: 500px;
+  background-size: cover;
+  padding: 30px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.description__text {
+  max-width: 60%;
+  font-size: 24px;
+  font-family: 'Gabriela', serif;
+  color: #fff;
+}
+
+.scene__description_text-position_left-up {
+  justify-content: flex-start;
+}
+
+.scene__description_text-position_right-up {
+  justify-content: flex-end;
+}
+
+.scene__description_text-position_right-down {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.scene__description_text-position_left-down {
+  align-items: flex-end;
+}
+
+.scene__achievements {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.achievement {
+  display: flex;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.achievement_image {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 60px;
+}
+
+.achievement__info {
+  margin-left: 10px;
+  font-family: 'Gabriela', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.achievement__label {
+  font-size: 24px;
+}
+
+.achievement__name {
+  font-size: 40px;
+}
+
+.scene__actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.scene__action-button {
+  margin: 0 30px 30px;
+  padding: 26px;
+  background-color: #555;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Roboto', sans-serif;
+}

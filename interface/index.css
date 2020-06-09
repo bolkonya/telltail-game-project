@@ -1,0 +1,282 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button,
+input {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid #dfdfdf;
+  display: flex;
+  height: 60px;
+  padding: 20px 40px;
+}
+
+.header__icon {
+  width: 60px;
+  height: 60px;
+  background: url(https://res.cloudinary.com/dnk7tyzqk/image/upload/v1554020285/telltail/logo.svg) no-repeat;
+  background-size: contain;
+}
+
+.header__text_bold-pink {
+  font-weight: bold;
+  color: #f49cc4;
+}
+
+.adventures-list,
+.filters,
+.scene {
+  padding: 40px 100px 0;
+}
+
+.adventure {
+  display: flex;
+  max-width: 1000px;
+  margin-bottom: 50px;
+}
+
+.adventure__image {
+  width: 200px;
+  height: 160px;
+  flex: none;
+}
+
+.adventure__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.adventure__info {
+  margin-left: 30px;
+  font-family: 'Gabriela', serif;
+}
+
+.adventure__name {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.adventure__description {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.adventure__tags {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.adventure__tag {
+  color: #fff;
+  background-color: #b3b3b3;
+  padding: 10px;
+  margin: 10px 10px 0 0;
+  border-radius: 3px;
+}
+
+.filter-tag-name {
+  font-size: 40px;
+  font-family: 'Gabriela', serif;
+  padding: 30px 100px 0;
+}
+
+.scene__description {
+  height: 500px;
+  background-size: cover;
+  padding: 30px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.description__text {
+  max-width: 60%;
+  font-size: 24px;
+  font-family: 'Gabriela', serif;
+  color: #fff;
+}
+
+.scene__description_text-position_left-up {
+  justify-content: flex-start;
+}
+
+.scene__description_text-position_right-up {
+  justify-content: flex-end;
+}
+
+.scene__description_text-position_right-down {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.scene__description_text-position_left-down {
+  align-items: flex-end;
+}
+
+.scene__achievements {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.achievement {
+  display: flex;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.achievement_image {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 60px;
+}
+
+.achievement__info {
+  margin-left: 10px;
+  font-family: 'Gabriela', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.achievement__label {
+  font-size: 24px;
+}
+
+.achievement__name {
+  font-size: 40px;
+}
+
+.scene__actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.scene__action-button {
+  margin: 0 30px 30px;
+  padding: 26px;
+  background-color: #555;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.filters__search-bar,
+.filters__tags-bar {
+  display: flex;
+  max-width: 1000px;
+}
+
+.filters__search-bar {
+  margin-bottom: 20px;
+}
+
+.filters__query-input {
+  border: 1px solid #dfdfdf;
+  flex-grow: 1;
+  margin-right: 20px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.filters__button {
+  border: none;
+  color: #fff;
+  background-color: #E79FC0;
+  border-radius: 3px;
+  padding: 0 20px;
+}
+
+.filters__button:hover {
+  cursor: pointer;
+}
+
+.filters__selected-tags {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filters__tag-input {
+  border: 1px solid #dfdfdf;
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filters__selected-tag {
+  display: flex;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px;
+  margin: 0 10px 10px 0;
+  background-color: #4E9BD6;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.filters__tag-remove-button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.filters__tag-remove-button:hover {
+  cursor: pointer;
+}
+
+.filters__tag-remove-button:before, .filters__tag-remove-button:after {
+  position: absolute;
+  left: 10px;
+  content: ' ';
+  height: 20px;
+  width: 1px;
+  background-color: #fff;
+}
+
+.filters__tag-remove-button:before {
+  transform: rotate(45deg);
+}
+
+.filters__tag-remove-button:after {
+  transform: rotate(-45deg);
+}
+
+.filters__search-tips {
+  z-index: 999;
+  position: absolute;
+  right: 0;
+  top: 46px;
+  width: 100%;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.filters__tag-input-wrapper {
+  position: relative;
+  flex-basis: 300px;
+}
+
+.filters__tip {
+  padding: 0 0 8px;
+}

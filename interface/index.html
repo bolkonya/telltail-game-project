@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ meta.description }}">
+    <link rel="stylesheet" href="index.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__icon"></div>
+        <div class="header__label">
+            <a href="/"><span class="header__text header__text_bold-pink">Telltail</span>Games</a>
+        </div>
+    </header>
+    <main class="main-page">
+
+        <form class="filters">
+            <div class="filters__search-bar">
+                <input class="filters__query-input" type="text">
+                <button class="filters__button">Найти</button>
+            </div>
+            <div class="filters__tags-bar">
+                <div class="filters__selected-tags">
+                    <div class="filters__selected-tag">
+                        <span>#команда</span>
+                        <div class="filters__tag-remove-button"></div>
+                    </div>
+                    <div class="filters__selected-tag">
+                        <span>#команда</span>
+                        <div class="filters__tag-remove-button"></div>
+                    </div>
+                    <div class="filters__selected-tag">
+                        <span>#команда</span>
+                        <div class="filters__tag-remove-button"></div>
+                    </div>
+                    <div class="filters__selected-tag">
+                        <span>#команда</span>
+                        <div class="filters__tag-remove-button"></div>
+                    </div>
+                    <div class="filters__selected-tag">
+                        <span>#команда</span>
+                        <div class="filters__tag-remove-button"></div>
+                    </div>
+                </div>
+                <div class="filters__tag-input-wrapper">
+                    <input class="filters__tag-input" type="text">
+                    <div class="filters__search-tips">
+                        <div class="filters__tip">фэнтези</div>
+                        <div class="filters__tip">фэнтези</div>
+                        <div class="filters__tip">фэнтези</div>
+                        <div class="filters__tip">фэнтези</div>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+
+        <article class="adventures-list">
+            <section class="adventure">
+                <div class="adventure__image">
+                    <a href="/adventures/{{ id }}/scenes/{{ firstSceneId }}">
+                        <img src="https://thewallpaper.co/wp-content/uploads/2016/10/Amazing-Computer-Widescreen-Wallpaper-HD-wallpaper-desktop-images-background-photos-hd-windows-wallpaper-samsung-iphone-mac-1920x1080.jpg">
+                    </a>
+                </div>
+                <div class="adventure__info">
+                    <div class="adventure__name">
+                        <a href="/adventures/{{ id }}/scenes/{{ firstSceneId }}">{{ name }}</a>
+                    </div>
+                    <div class="adventure__description">
+                        {{ description }}
+                    </div>
+                    <div class="adventure__tags">
+                        <a class="adventure__tag" href="/tag/{{ name }}">
+                            #{{ slug }}
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>

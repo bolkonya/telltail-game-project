@@ -1,0 +1,129 @@
+.filters {
+  padding: 40px 100px 0;
+}
+
+.filters__search-bar,
+.filters__tags-bar {
+  display: flex;
+  max-width: 1000px;
+}
+
+.filters__search-bar {
+  margin-bottom: 20px;
+}
+
+.filters__tags-bar {
+  min-height: 50px;
+}
+
+.filters__query-input {
+  padding: 0 10px;
+  border: 1px solid var(--color-light-grey);
+  flex-grow: 1;
+  margin-right: 20px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.filters__button {
+  border: none;
+  color: #fff;
+  background-color: #e79fc0;
+  border-radius: 3px;
+  padding: 0 20px;
+}
+
+.filters__button:hover {
+  cursor: pointer;
+}
+
+.filters__selected-tags {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filters__tag-input {
+  padding: 0 10px;
+  border: 1px solid var(--color-light-grey);
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filters__selected-tag {
+  display: flex;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px;
+  margin: 0 10px 10px 0;
+  background-color: #4e9bd6;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.filters__tag-remove-button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.filters__tag-remove-button:hover {
+  cursor: pointer;
+}
+
+.filters__tag-remove-button::before,
+.filters__tag-remove-button::after {
+  position: absolute;
+  left: 10px;
+  content: ' ';
+  height: 20px;
+  width: 1px;
+  background-color: #fff;
+}
+
+.filters__tag-remove-button::before {
+  transform: rotate(45deg);
+}
+
+.filters__tag-remove-button::after {
+  transform: rotate(-45deg);
+}
+
+.filters__search-tips {
+  z-index: 999;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 46px;
+  width: 100%;
+  border: 1px solid var(--color-light-grey);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.filters__tag-input-wrapper {
+  position: relative;
+  width: 300px;
+  flex: none;
+}
+
+.filters__tip {
+  padding: 0 0 8px;
+}
+
+.filters__tip_selected {
+  color: #4e9bd6;
+}
+
+.filters__tip:hover {
+  cursor: pointer;
+}
+
+.filters__tip-text_bold {
+  font-weight: bold;
+}
+
+.hide {
+  visibility: hidden;
+}

@@ -1,0 +1,46 @@
+.adventure {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.adventure__image {
+  width: 200px;
+  height: 160px;
+  flex: none;
+}
+
+.adventure__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.adventure__info {
+  margin-left: 30px;
+  font-family: 'Gabriela', serif;
+}
+
+.adventure__name {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.adventure__description {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.adventure__tags {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.adventure__tag {
+  color: #fff;
+  background-color: #b3b3b3;
+  padding: 10px;
+  margin: 10px 10px 0 0;
+  border-radius: 3px;
+}

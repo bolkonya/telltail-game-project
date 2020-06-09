@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "lib": [
+      "dom",
+      "es2018"
+    ],
+    "rootDir": ".",
+    "outDir": "dist/",
+    "baseUrl": "./server/",
+    "module": "commonjs",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "typeRoots": [
+      "./@types"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "server/db-fill.ts"
+  ]
+}
